@@ -1,0 +1,103 @@
+<HTML>
+    <HEAD>
+        <TITLE> COMPRA </TITLE>
+         <link rel="stylesheet" href="estilos.css">
+         <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#ffe5e5; 
+            margin:0;
+            padding:0;
+        }
+
+        .contenedor{
+            width: 380px;
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            border: 2px solid #ff9999;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+        }
+
+        h2{
+            text-align:center;
+            color:#b30000;
+            margin-bottom:20px;
+        }
+
+        label{
+            font-weight:bold;
+            color:#660000;
+        }
+
+        input{
+            width:100%;
+            padding:12px;
+            margin-top:5px;
+            margin-bottom:18px;
+            border-radius:6px;
+            border:1px solid #cc7a7a;
+            background:#fff5f5;
+            font-size:15px;
+        }
+
+        input:focus{
+            outline:none;
+            border-color:#b30000;
+            box-shadow:0 0 5px rgba(179,0,0,0.4);
+        }
+
+        .btn{
+            background:#d9534f;
+            color:white;
+            padding:12px;
+            width:100%;
+            border:none;
+            border-radius:6px;
+            font-size:17px;
+            cursor:pointer;
+            transition:0.2s;
+        }
+
+        .btn:hover{
+            background:#b52a27;
+        }
+    </style>
+    </HEAD>
+    <BODY>
+ <nav>
+    
+      <a href="PAG1.HTML">INICIO </a><BR>
+      <a href="CATALOGOPAPE.html">CATALOGO </a> <BR>
+        <a href="COMPRASS.html">COMPRAS</a> <BR>
+    
+  </nav>
+
+<header> 
+    <center><H1> COMPRAS </H1></center>
+</header>
+
+<div class="contenedor">
+    <h2>COMPRA</h2>
+
+    <form action="totalcompra.php" method="POST">
+
+        <label>Producto:</label>
+        <input type="text" name="producto" required>
+
+        <label>Cantidad:</label>
+        <input type="number" name="cantidad" min="1" required>
+
+        <label>Precio:</label>
+        <input type="number" name="precio" step="0.01" min="0" required>
+
+        <button class="btn" type="submit">Comprar</button>
+
+    </form>
+</div>
+
+</body>
+</html>
+</BODY>
+</HTML>
